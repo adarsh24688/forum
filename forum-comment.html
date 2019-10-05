@@ -32,14 +32,7 @@ display:none;
 
 
 
-  </style>
-<script>
-$(document).ready(function(){
-    $("#button").click(function(){
-        $(".mydiv").slideToggle();
-    });
-});
-</script>
+	</style>
 </head>
 <body style="background-color:black"> 
  
@@ -91,6 +84,13 @@ $(document).ready(function(){
 
 </body>
 <script>
+	// script should be applied to last after completely loading of html in dom
+$(document).ready(function(){
+    $("#button").click(function(){
+        $(".mydiv").slideToggle();
+    });
+});	
+	
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
